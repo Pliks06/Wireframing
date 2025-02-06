@@ -8,10 +8,20 @@ body {
 }
 
 header {
-    background-color: rgba(18, 18, 18, 0.9); 
+    background-color: rgba(18, 18, 18, 0.9);
     text-align: center;
     padding: 20px;
     border-bottom: 3px solid #00ffcc;
+    position: relative;
+}
+
+.logo {
+    width: 200px; 
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: transform 0.3s ease;
 }
 
 nav ul {
@@ -48,7 +58,7 @@ nav ul li a {
 }
 
 .profile-pic:hover {
-    transform: scale(1.1);
+    transform: rotate(360deg);
 }
 
 .bio-text {
